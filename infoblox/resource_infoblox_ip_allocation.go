@@ -45,6 +45,7 @@ func resourceIPAllocation() *schema.Resource {
 			"dns_view": &schema.Schema{
 				Type:        schema.TypeString,
 				Optional:    true,
+				Default:     "default",
 				Description: "Dns View under which the zone has been created.",
 			},
 			"ip_addr": &schema.Schema{
